@@ -2,11 +2,56 @@
 <html>
 <head>
     <title>Wardrobe</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+        
+        
+        .center-header {
+            text-align: center;
+        }
+        
+        .center {
+            text-align: center;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f2f2f2;
+        }
+        
+        .contact-button {
+            font-size: 18px;
+            padding: 12px 20px;
+            background-color: #322E3F;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Wardrobe</h1>
-    
-    <button onclick="location.href='mailto:wardrobe.evgeny.zhurko@gmail.com';">Contact Us</button>
+    <div class="center-header">
+        <h1>Wardrobe: Digital Clothing App</h1>
+    </div>
+    <div class="center">
+        <p>Welcome to Wardrobe!</p>
+      <div> If you have any questions we are ready to help you.
+      </div>
+        <button class="contact-button" onclick="location.href='mailto:wardrobe.evgeny.zhurko@gmail.com';">Contact Us</button>
+    </div>
     
     <footer>
         <p>&copy; 2023 Evgeny Zhurko. All rights reserved.</p>
